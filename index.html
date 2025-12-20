@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .download-btn {
+      display: flex;
+      width: 15em;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 50px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.7s ease;
+
+    }
+
+
+    .download-btn:hover {
+      background-color: #fed793;
+      font-size: 17px;
+      transition: background-color 0.7s ease;
+      color: black;
+
+    }
+  </style>
+  <title>Página do André</title>
+
+  <link rel="shortcut icon" href="github-logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my_photo.png" alt="André Esteves" width="80">
+        </figure>
+
+
+        <div class="info-content">
+          <h1 class="name" title="André Esteves">André Esteves</h1>
+
+          <p class="title">Computer Science Student</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <span class="contact-link">andre-alves-b@hotmail.com</span>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title" data-lang-en="Birthday" data-lang-pt="Aniversário">Birthday</p>
+
+              <time datetime="06-06-2005" data-lang-en="June 06, 2005" data-lang-pt="06 de junho de 2005">June 06, 2005</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title" data-lang-en="Location" data-lang-pt="Localização">Location</p>
+
+              <address data-lang-en="Sorocaba, São Paulo, Brazil" data-lang-pt="Sorocaba, São Paulo, Brasil">Sorocaba, São Paulo, Brazil</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/andr%C3%A9-esteves-293591261/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+
+
+          <li class="social-item">
+            <a href="https://github.com/andretva777/" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/andrealvesbaggio/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link data-page-target="about" data-lang-en="About" data-lang-pt="Sobre">About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-page-target="resume" data-lang-en="Resume" data-lang-pt="Currículo">Resume</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-page-target="project" data-lang-en="Projects" data-lang-pt="Projetos">Projects</button>
+          </li> -->
+
+          <li class="navbar-lang" aria-label="Language switcher">
+            <button class="lang-btn is-active" type="button" data-lang="pt">PT</button>
+            <span class="lang-separator" aria-hidden="true">|</span>
+            <button class="lang-btn" type="button" data-lang="en">EN</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title" data-lang-en="About me" data-lang-pt="Sobre mim">About me</h2>
+        </header>
+
+      <section class="about-text">
+        <p data-lang-en="Hello, I'm André A. B. Esteves. I bridge technology, business strategy, and people management to drive meaningful results." data-lang-pt="Olá, eu sou André A. B. Esteves. Gosto da junção de tecnologia, estratégia de negócios e gestão de pessoas para alcançar resultados concretos.">
+          Hello, I'm André A. B. Esteves. I bridge <strong>technology, business strategy, and people management</strong> 
+          to drive meaningful results.
+        </p>
+        <p data-lang-en="Currently pursuing a B.S. in Computer Science at the Federal University of São Carlos (UFSCar), I enjoy working with teams and managing relationships. As founder of an ecommerce operation, I ran the full business lifecycle — from supplier negotiations to customer experience — managing inventory and surpassing 2,000 sales." data-lang-pt="Atualmente curso Bacharelado em Ciência da Computação na UFSCar, objetivando trabalho em equipe e gestão de relacionamentos. Como fundador de um ecommerce, conduzi todo o ciclo do negócio — de negociações com fornecedores à experiência do cliente — ultrapassando 2.000 vendas.">
+          Currently pursuing a B.S. in Computer Science at the Federal University of São Carlos (UFSCar), 
+          I discovered my calling lies not just in building systems, but in <strong>working with teams and managing 
+          relationships</strong>. As founder of an ecommerce operation, I managed the complete business 
+          lifecycle — from supplier negotiations to customer experience — achieving over 2,000 sales and developing 
+          a keen understanding of market dynamics and operational efficiency.
+        </p>
+        <p data-lang-en="My foundation in Project Management, Software Engineering, and Machine Learning builds analytical rigor, while entrepreneurship taught me to navigate ambiguity and make data-driven decisions. I'm seeking internships in financial institutions to apply this mix of technical literacy and people-centric leadership." data-lang-pt="Minha base em Gestão de Projetos, Engenharia de Software e Machine Learning fornece rigor analítico, enquanto o empreendedorismo me ensinou a lidar com incertezas e decisões orientadas por dados. Busco estágios em instituições financeiras para aplicar essa combinação de visão técnica e liderança centrada em pessoas.">
+          My academic foundation in <strong>Project Management, Software Engineering, and Machine Learning</strong> 
+          equips me with analytical rigor, while my entrepreneurial experience taught me to navigate ambiguity, 
+          make data-driven decisions, and build trust with diverse stakeholders. I'm seeking internship opportunities 
+          in <strong>financial institutions</strong> where I can apply this blend of technical literacy and people-centric 
+          leadership to contribute to high-performing teams.
+        </p>
+      </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+        <h3 class="h3 service-title" data-lang-en="What I enjoy" data-lang-pt="O que eu gosto de fazer">What I enjoy</h3>
+
+        <ul class="service-list">
+
+          <li class="service-item">
+            <div class="service-icon-box">
+              <img src="./assets/images/icon-automation.svg" alt="Automation icon" width="40">
+            </div>
+
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title" data-lang-en="Process Automation" data-lang-pt="Automação de Processos">Process Automation</h4>
+
+              <p class="service-item-text" data-lang-en="Building solutions that save time and increase efficiency." data-lang-pt="Criando soluções que economizam tempo e elevam a eficiência.">
+                Building solutions that save time and increase efficiency.
+              </p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-icon-box">
+              <img src="./assets/images/icon-app.svg" alt="Prototype icon" width="40">
+            </div>
+
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title" data-lang-en="Product Development" data-lang-pt="Desenvolvimento de Produto">Product Development</h4>
+
+              <p class="service-item-text" data-lang-en="Creating high-fidelity MVPs that bridge user needs and business goals." data-lang-pt="Criando MVPs de alta fidelidade que conectam necessidades de usuários a metas de negócio.">
+                Creating high-fidelity MVPs that bridge user needs and business goals.
+              </p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-icon-box">
+              <img src="./assets/images/icon-market.svg" alt="Financial Market icon" width="40">
+            </div>
+
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title" data-lang-en="Financial Markets" data-lang-pt="Mercados Financeiros">Financial Markets</h4>
+
+              <p class="service-item-text" data-lang-en="Connecting macro scenarios with data-driven insights." data-lang-pt="Analisando dados para revelar padrões e orientar decisões estratégicas.">
+                Connecting macro scenarios with data-driven insights.
+              </p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-icon-box">
+              <img src="./assets/images/icon-people.svg" alt="People icon" width="40">
+            </div>
+
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title" data-lang-en="People & Relationships" data-lang-pt="Pessoas & Relacionamentos">People & Relationships</h4>
+
+              <p class="service-item-text" data-lang-en="Building genuine connections through transparent communication." data-lang-pt="Construindo conexões genuínas com comunicação transparente.">
+                Building genuine connections through transparent communication.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title" data-lang-en="Resume" data-lang-pt="Currículo">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3" data-lang-en="Education" data-lang-pt="Formação">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title" data-lang-en="B.S. Computer Science — UFSCar" data-lang-pt="Bacharelado em Ciência da Computação — UFSCar">B.S. Computer Science — UFSCar</h4>
+              <span data-lang-en="2023 — Present" data-lang-pt="2023 — Presente">2023 — Present</span>
+              <p class="timeline-text" data-lang-en="Universidade Federal de São Carlos. Focus on software engineering, project management, and applied ML." data-lang-pt="Universidade Federal de São Carlos. Foco em engenharia de software, gestão de projetos e ML aplicado.">
+                Universidade Federal de São Carlos. Focus on software engineering, project management, and applied ML.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title" data-lang-en="Languages" data-lang-pt="Idiomas">Languages</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" data-lang-en="Portuguese" data-lang-pt="Português">Portuguese</h5>
+                <data value="100" data-lang-en="Native" data-lang-pt="Nativo">Native</data>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" data-lang-en="English" data-lang-pt="Inglês">English</h5>
+                <data value="85" data-lang-en="Advanced" data-lang-pt="Avançado">Advanced</data>
+              </div>
+            </li>
+
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" data-lang-en="Spanish" data-lang-pt="Espanhol">Spanish</h5>
+                <data value="65" data-lang-en="Intermediate" data-lang-pt="Intermediário">Intermediate</data>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title" data-lang-en="Region of Interest" data-lang-pt="Região de Interesse">Region of Interest</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" data-lang-en="Based in Sorocaba (Brazil). <br>Comfortable with hybrid or remote setups.<br>Willing to travel as needed.<br>open to roles within ~100 km.<br>Open to international opportunities." data-lang-pt="Preferencialmente em Sorocaba (Brasil).<br>Aceita modelos híbridos ou remotos.<br>Disposto a viajar pela empresa.<br>Aberto a vagas num raio de ~100 km.<br>Aberto a oportunidades internacionais.">Based in Sorocaba (Brazil); open to roles within ~100 km; willing to travel as needed.<br>Comfortable with hybrid or remote setups; open to international opportunities.</h5>
+                <data value=""></data>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <!-- <article class="portfolio" data-page="portfolio"> -->
+
+        <header>
+          <h2 class="h2 article-title" data-lang-en="Portfolio" data-lang-pt="Portfólio">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn data-filter-value="all" data-lang-en="All" data-lang-pt="Todos">All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn data-filter-value="web design" data-lang-en="Web design" data-lang-pt="Web design">Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn data-filter-value="applications" data-lang-en="Applications" data-lang-pt="Aplicações">Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn data-filter-value="web development" data-lang-en="Web development" data-lang-pt="Desenvolvimento web">Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value data-lang-en="Select category" data-lang-pt="Selecione a categoria">Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item data-filter-value="all" data-lang-en="All" data-lang-pt="Todos">All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item data-filter-value="web design" data-lang-en="Web design" data-lang-pt="Web design">Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item data-filter-value="applications" data-lang-en="Applications" data-lang-pt="Aplicações">Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item data-filter-value="web development" data-lang-en="Web development" data-lang-pt="Desenvolvimento web">Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category" data-lang-en="Web development" data-lang-pt="Desenvolvimento web">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category" data-lang-en="Web development" data-lang-pt="Desenvolvimento web">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category" data-lang-en="Web design" data-lang-pt="Web design">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category" data-lang-en="Applications" data-lang-pt="Aplicações">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category" data-lang-en="Web design" data-lang-pt="Web design">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category" data-lang-en="Web design" data-lang-pt="Web design">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category" data-lang-en="Web development" data-lang-pt="Desenvolvimento web">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category" data-lang-en="Applications" data-lang-pt="Aplicações">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category" data-lang-en="Web development" data-lang-pt="Desenvolvimento web">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      <!-- </article> -->
+
+
+
+
+
+      <!--
+        - #project
+      -->
+
+      <!-- <article class="project" data-page="project"> -->
+
+        <header>
+          <h2 class="h2 article-title" data-lang-en="Projects" data-lang-pt="Projetos">Projects</h2>
+        </header>
+
+        <section class="project-posts">
+
+          <ul class="project-posts-list">
+
+            <li class="project-post-item">
+              <a href="https://github.com/ShivamJaviya/Artifyai.git" target="_blank">
+
+                <figure class="project-banner-box">
+
+
+
+                  <img src="./assets/images/project-9.jpg" alt="ArtifyAI" loading="lazy" target="_blank">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">Artifyai AI tools</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">June - August, 2024</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title">Artifyai AI</h3>
+
+                  <p class="project-text">
+                    ArtifyAI is an AI-driven web application that integrates various AI models such as ChatGPT, Gemini,
+                    and image generation tools.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-post-item">
+              <a href="https://github.com/vishalthadani/G3_Krackit/tree/master" target="_blank">
+
+                <figure class="project-banner-box">
+
+
+
+                  <img src="./assets/images/1.png" alt="Career counselling" loading="lazy" target="_blank">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">Career counselling Website </p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fed - May, 2024</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title">Krackit - Career counselling</h3>
+
+                  <p class="project-text">
+                    Krackit is basically a career counseling website. Its purpose is to guide students in determining
+                    which career path is the best fit for them.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-post-item">
+              <a href="https://github.com/ShivamJaviya/Apple_product_sell_website.git" target="_blank">
+
+                <figure class="project-banner-box">
+                  <img src="./assets/images/product2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">Apple Product Selling website</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">March-May, 2023</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title"> i - Product Selling</h3>
+
+                  <p class="project-text">
+                    I built an e-commerce website that essentially sells Apple products.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-post-item">
+              <a href="https://github.com/ShivamJaviya/TechPurchasePro.git" target="_blank">
+
+                <figure class="project-banner-box">
+                  <img src="./assets/images/project-3.jpeg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">TechPurchase Pro</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">August - Septemder, 2020</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title">TechPurchase Pro</h3>
+
+                  <p class="project-text">
+                    I built a console-based project in which I included customer requirements to suggest the
+                    best-fitting product for them. </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-post-item">
+              <a href="https://github.com/ShivamJaviya/Health-Website.git" target="_blank">
+
+                <figure class="project-banner-box">
+                  <img src="./assets/images/project-4.png" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">Health Care website</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">September, 2021</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title">HardCore Fitness</h3>
+
+                  <p class="project-text">
+                    I built this website for my college project. It's a healthcare platform featuring tools to monitor
+                    calorie intake and maintenance of daily calorie goals. </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-post-item">
+              <a href="https://shivamjaviya.github.io/old_style-Calculator-/" target="_blank">
+
+                <figure class="project-banner-box">
+                  <img src="./assets/images/Project-5.jpeg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">Basic Calculator</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23"> Octomber, 2023</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title">Old Style Calculator</h3>
+
+                  <p class="project-text">
+                    I developed a classic, basic calculator to demonstrate my CSS proficiency and showcase a vintage
+                    design aesthetic. </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-post-item">
+              <a href="https://github.com/ShivamJaviya/ATM-System.git" target="_blank">
+
+                <figure class="project-banner-box">
+                  <img src="./assets/images/6-Project.jpeg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">ATM System With mysql </p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">April, 2024</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title">ATM System</h3>
+
+                  <p class="project-text">
+                    I developed an ATM system in Java, leveraging libraries to execute CRUD operations, with all data
+                    seamlessly stored in a MySQL database. </p>
+
+                </div>
+
+              </a>
+            </li>
+
+
+
+
+            <li class="project-post-item">
+              <a href="https://github.com/ShivamJaviya/Olympics-Database-Management-System" target="_blank">
+
+                <figure class="project-banner-box">
+                  <img src="./assets/images/7-Project.png" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">DataBase Of Olympic</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Decmber, 2023</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title">Data Analysis of Olympic</h3>
+
+                  <p class="project-text">
+
+                    I dedication to building this database with meticulous steps and integrating ER functionality,
+                    schemas, and SQL queries showcases your proficiency and commitment to academic excellence.
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      <!-- </article> -->
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
